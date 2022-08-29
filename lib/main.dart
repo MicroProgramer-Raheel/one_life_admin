@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:one_life_admin/firebase_options.dart';
 import 'package:one_life_admin/helpers/helpers.dart';
 import 'package:one_life_admin/views/screens/screen_login.dart';
 import 'package:one_life_admin/widgets/custom_error.dart';
@@ -19,7 +20,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Future.delayed(Duration(seconds: 2));
   colorConfig();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(const MyApp());
 }
 
