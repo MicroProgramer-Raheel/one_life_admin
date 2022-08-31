@@ -8,6 +8,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:one_life_admin/firebase_options.dart';
 import 'package:one_life_admin/helpers/helpers.dart';
+import 'package:one_life_admin/views/screens/screen_admin_home_page.dart';
 import 'package:one_life_admin/views/screens/screen_login.dart';
 import 'package:one_life_admin/widgets/custom_error.dart';
 
@@ -139,10 +140,10 @@ class _MyAppState extends State<MyApp> {
     return Sizer(
       builder: (BuildContext context, Orientation orientation, DeviceType deviceType) {
         return GetMaterialApp(
-          home: ScreenLogin(),
+          home: ScreenAdminHomePage(),
           locale: Locale('en', 'US'),
           debugShowCheckedModeBanner: false,
-          title: "$appName",
+          title: "One Life",
           theme: ThemeData(
             fontFamily: 'SegeoUi',
             primarySwatch: appPrimaryColor,

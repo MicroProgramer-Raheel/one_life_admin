@@ -49,15 +49,30 @@ dependencies:
   flare_flutter: ^3.0.2
   path_provider: ^2.0.11
   open_file: ^3.2.1
-  flutter_downloader: ^1.7.4
+  flutter_downloader: ^1.8.3
   file_picker: ^4.6.1
   device_info: ^2.0.3
   android_path_provider: ^0.3.0
   firebase_messaging: ^13.0.0
   flutter_app_badger: ^1.4.0
-  flutter_local_notifications: ^9.5.3+1
+  flutter_local_notifications: ^9.8.0+1
   cached_network_image: ^3.2.1
 
+
+  flutter_svg: ^1.1.4
+  dotted_border: ^2.0.0+2
+  water_drop_nav_bar: ^2.2.0+3
+  datepicker_dropdown: ^0.0.7+1
+  qr_code_scanner: ^1.0.1
+  permission_handler:
+  pinput: ^2.2.12
+  card_swiper: ^2.0.4
+  google_maps_flutter: any
+  map_launcher: ^2.3.0+1
+  #  geolocator: ^8.2.0
+  location: any
+  qr_flutter: ^4.0.0
+  flutter_chat_ui: ^1.6.4
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -87,6 +102,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/svg/
 
   fonts:
     - family: SegeoUi
